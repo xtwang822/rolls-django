@@ -3,8 +3,7 @@ This script generates a self-contained installation of the EBCLI.
 
 Prerequisites:
 
-    1. Python + pip (preferably Python 3.7, although Python 2.7, 3.4, 3.5,
-       3.6, and 3.7 are supported)
+    1. Python + pip (preferably Python 3.7)
     2. virtualenv
     3. Bash/Zsh on Linux/MacOS ; PowerShell/CMD Prompt on Windows
 
@@ -13,14 +12,14 @@ Usage:
     To execute script:
 
         # let the script find Python in PATH
-        python /<location to script>/bundled_installer.py
+        python ./scripts/ebcli_installer.py
 
         # specify Python executable
-        python scripts/bundled_installer.py -p ~/.pyenv/versions/3.7.9/bin/python
+        python ./scripts/ebcli_installer.py -p ~/.pyenv/versions/3.7.12/bin/python
 
     To view help text:
 
-        python /<location to script>/bundled_installer.py --help
+        python ./scripts/ebcli_installer.py --help
 
 """
 import argparse
