@@ -1,4 +1,4 @@
-$PythonInstaller = "$PSScriptRoot\python3.7.3.exe"
+$PythonInstaller = "$PSScriptRoot\python3.7.9.exe"
 $StepNumber = 1
 
 function Write-StepTitle([String] $StepMessage) {
@@ -13,17 +13,17 @@ function Write-StepTitle([String] $StepMessage) {
 }
 
 function Get-PythonExecutable {
-    Write-StepTitle "Looking for existing Python 3.7.3 installation."
-    return Get-WmiObject -Namespace "root/cimv2" -Class Win32_Product -Filter "Name Like 'Python 3.7.3 Executables%'"
+    Write-StepTitle "Looking for existing Python 3.7.9 installation."
+    return Get-WmiObject -Namespace "root/cimv2" -Class Win32_Product -Filter "Name Like 'Python 3.7.9 Executables%'"
 }
 
 function Get-PythonInstallationTarget {
     if ([Environment]::Is64BitOperatingSystem) {
         Write-StepTitle "Downloading x64 version of Python."
-        return "https://www.python.org/ftp/python/3.7.3/python-3.7.3-amd64-webinstall.exe"
+        return "https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64-webinstall.exe"
     } else {
         Write-StepTitle "Downloading x86 version of Python."
-        return "https://www.python.org/ftp/python/3.7.3/python-3.7.3-webinstall.exe"
+        return "https://www.python.org/ftp/python/3.7.9/python-3.7.9-webinstall.exe"
     }
 }
 
@@ -79,6 +79,6 @@ if ($PythonExecutable.count -eq 0) {
     Update-UserEnvironmentPath
     Remove-Item $PythonInstaller
 } else {
-    Write-Host "Python 3.7.3 is already installed." -ForegroundColor Green
+    Write-Host "Python 3.7.9 is already installed." -ForegroundColor Green
 }
 Install-Virtualenv
