@@ -194,4 +194,4 @@ Suppose the dependencies of `eb`, say `Dep A` and `Dep B`, are in conflict. Beca
 
 ## 6. License
 
-This library is licensed under the Mozilla Public License Version 2.0.
+This library is licensed under the Apache-2.0 License.
