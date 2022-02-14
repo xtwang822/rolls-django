@@ -1,4 +1,7 @@
 """
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
 This script generates a self-contained installation of the EBCLI.
 
 Prerequisites:
