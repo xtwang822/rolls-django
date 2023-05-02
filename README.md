@@ -1,4 +1,25 @@
-# EB CLI Installer
+# Elastic Beanstalk CLI Installer
+
+- [Elastic Beanstalk CLI Installer](#elastic-beanstalk-cli-installer)
+  - [1. Overview](#1-overview)
+    - [1.1. Prerequisites](#11-prerequisites)
+  - [2. Quick start](#2-quick-start)
+    - [2.1. Clone this repository](#21-clone-this-repository)
+    - [2.2. Install/Upgrade the EB CLI](#22-installupgrade-the-eb-cli)
+      - [MacOS/Linux](#macoslinux)
+      - [Windows](#windows)
+    - [2.3. After installation](#23-after-installation)
+  - [3. Usage](#3-usage)
+    - [3.1 Advanced usage](#31-advanced-usage)
+    - [3.2 Options](#32-options)
+  - [4. Troubleshooting](#4-troubleshooting)
+  - [5. Frequently asked questions](#5-frequently-asked-questions)
+    - [5.1. For the **experienced Python developer**, what's the advantage of this mode of installation instead of regular `pip` inside a `virtualenv`?](#51-for-the-experienced-python-developer-whats-the-advantage-of-this-mode-of-installation-instead-of-regular-pip-inside-a-virtualenv)
+    - [5.2. On macOS (or Linux systems with `brew`), is this better than `brew install awsebcli`?](#52-on-macos-or-linux-systems-with-brew-is-this-better-than-brew-install-awsebcli)
+    - [5.3. I already have the EB CLI installed. Can I still execute `ebcli_installer.py`?](#53-i-already-have-the-eb-cli-installed-can-i-still-execute-ebcli_installerpy)
+    - [5.4. How does `ebcli_installer.py` work?](#54-how-does-ebcli_installerpy-work)
+    - [5.5. Are there dependency problems that this mode of installation doesn't solve?](#55-are-there-dependency-problems-that-this-mode-of-installation-doesnt-solve)
+  - [6. License](#6-license)
 
 ## 1. Overview
 
